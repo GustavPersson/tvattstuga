@@ -1,0 +1,12 @@
+{
+  "name": "tvattstuga",
+  "scripts": {
+  },
+  "env": {
+    "NODE_ENV": {
+      "required": true
+    }
+  },
+  "addons": [
+  ]
+}
