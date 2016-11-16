@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server-entry.js",
   "scripts": {
-    "prestart": "rm -rf compiled && npm run build:server && npm run build",
+    "heroku-postbuild": "rm -rf compiled && npm run build:server && npm run build",
     "prestart:dev": "npm run build:dev",
     "pretest:e2e": "npm run build",
     "build": "NODE_ENV=production webpack --config src/config/webpack.config.prod.js -p",
@@ -32,7 +32,6 @@
     "test"
   ],
   "pre-push": [
-    "test:e2e"
   ],
   "author": "Peter Mouland",
   "license": "ISC",
