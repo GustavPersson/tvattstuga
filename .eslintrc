@@ -1,26 +1,27 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb/base",
-  "env": {
-    "node": true,
-    "es6": true,
-    "mocha": true,
-    "browser": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true
-    }
-  },
+  "extends": "airbnb",
   "plugins": ["react"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
   "rules": {
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "arrow-parens": ["error", "always"],
-    "class-methods-use-this": 0,
-    "comma-dangle": 0,
-    "no-unused-vars": ["error", {"varsIgnorePattern": "^log"}],
-    "id-length": [2, {"exceptions": ["e", "i"]}]
+    "global-require": 0,
+    "no-underscore-dangle": 0,
+    "no-console": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "globals": {
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DISABLE_SSR__": true,
+    "__DEV__": true,
+    "webpackIsomorphicTools": true,
+    "should": true,
+    "expect": true,
+    "assert": true
   }
 }
