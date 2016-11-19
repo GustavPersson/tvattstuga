@@ -103,10 +103,7 @@ app.get('*', (req, res) => {
 if (config.port) {
   app.listen(config.port, config.host, (err) => {
     if (err) console.error(`==> 😭  OMG!!! ${err}`);
-
     console.info(chalk.green(`==> 🌎  Listening at http://${config.host}:${config.port}`));
-    // Open Chrome
-    require('../tools/openBrowser').default(config.port);
   });
 } else {
   console.error(chalk.red('==> 😭  OMG!!! No PORT environment variable has been specified'));
