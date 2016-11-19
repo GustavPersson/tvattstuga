@@ -104,6 +104,7 @@ if (config.port) {
   app.listen(config.port, (err) => {
     if (err) console.error(`==> 😭  OMG!!! ${err}`);
     console.info(chalk.green(`==> 🌎  Listening at http://${config.host}:${config.port}`));
+    console.info(chalk.green(`==> 🌎  Server info ${config.host}:${config.port} ${process.env.NODE_ENV}`));
   });
 } else {
   console.error(chalk.red('==> 😭  OMG!!! No PORT environment variable has been specified'));

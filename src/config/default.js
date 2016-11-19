@@ -1,5 +1,5 @@
 module.exports = {
-  host: process.env.NODE_HOST || 'localhost',
+  host: process.env.HOST || 'localhost',
   port: process.env.PORT || 5000,
   app: {
     htmlAttributes: { lang: 'en' },
