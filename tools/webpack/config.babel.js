@@ -14,7 +14,7 @@ const WebpackIsomorphicToolsPlugin = require('webpack-isomorphic-tools/plugin');
 const webpackIsomorphicToolsPlugin = new WebpackIsomorphicToolsPlugin(require('./WIT.config')).development(isDev);
 
 // Disable CSSModules here
-const CSSModules = true;
+const CSSModules = false;
 // Register vendors here
 const vendor = [
   'react', 'react-dom', 'react-addons-shallow-compare',
@@ -41,7 +41,7 @@ const getPlugins = () => {
       options: {
         // Javascript lint
         eslint: {
-          failOnError: true,  // Disable js lint error terminating here
+          failOnError: false,  // Disable js lint error terminating here
         },
         context: '/',         // Required for the sourceMap of css/sass loader
         debug: isDev,

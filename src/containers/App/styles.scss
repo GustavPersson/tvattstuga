@@ -5,10 +5,10 @@ body {
   font-family: 'Helvetica-Light', Helvetica, Arial, sans-serif;
 }
 
-.App {
+.app {
   color: $color-white;
 
-  .header {
+  &__header {
     overflow: auto;
     padding: 15px;
 

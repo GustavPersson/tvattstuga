@@ -3,10 +3,10 @@ module.exports = {
   port: process.env.PORT || 5000,
   app: {
     htmlAttributes: { lang: 'en' },
-    title: 'React Cool Starter',
-    titleTemplate: 'React Cool Starter - %s',
+    title: 'Tvättstugan!',
+    titleTemplate: 'Tvättstuga - %s',
     meta: [
-      { name: 'description', content: 'The best react universal starter boilerplate in the world.' },
+      { name: 'description', content: 'The best tvättstugebokning in the world.' },
     ],
   },
 };
